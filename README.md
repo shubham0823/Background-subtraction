@@ -62,28 +62,28 @@ Binary Mask:
 
 You can use these examples to verify the expected behavior of the script.
 
-### Code Description
+## Code Description
 
-Main Functions
+### Main Functions
 
 background_separation(image_path, threshold_value=30)
 
-Input:
+##### Input:
 
 image_path: Path to the input image.
 
 threshold_value: Threshold value for background separation (default: 30).
 
-Output:
+##### Output:
 
 Tuple containing the original image, grayscale image, and binary mask.
 
-Description:
+##### Description:
 This function reads the image, converts it to grayscale, and applies a binary threshold to create a mask separating the background and foreground.
 
 display_images(original, grayscale, binary_mask)
 
-Input:
+##### Input:
 
 original: Original image.
 
@@ -91,10 +91,10 @@ grayscale: Grayscale image.
 
 binary_mask: Binary mask separating background and foreground.
 
-Description:
+##### Description:
 Displays the three images (original, grayscale, and binary mask) in separate windows.
 
-Example Usage
+## Example Usage
 
 The script includes an example usage in the if __name__ == "__main__" block:
 
@@ -104,19 +104,13 @@ Calls background_separation with a threshold value of 50.
 
 Displays the results using display_images.
 
-Customization
+## Customization
 
 Threshold Value: Adjust the threshold_value parameter in the background_separation function to fine-tune the separation based on the input image.
 
 Image Path: Replace example.jpg with the path to your own image.
 
-Contributing
+## Contributing
 
 Feel free to fork the repository and submit pull requests. Contributions are welcome!
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-Happy coding! If you have any issues or suggestions, feel free to open an issue on GitHub.
 
